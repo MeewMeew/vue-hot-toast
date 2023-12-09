@@ -23,7 +23,8 @@
   "scripts": {
     "dev": "vite",
     "compile-css": "node-sass ./src/styles/index.scss ./dist/vue-hot-toast.css",
-    "build": "vue-tsc && vite build && pnpm compile-css"
+    "build": "vue-tsc && vite build && npm run compile-css",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "vue": "^3.3.4"
